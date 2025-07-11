@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Dancing Script", cursive;
+  font-family: "Jost", sans-serif;
+  font-family: "Kanit", sans-serif;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+}
+
+.card {
+  width: 100%;
+  max-width: 540px;
+  background-color: #ffff;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+}
+
+.card .to_do_app {
+  display: flex;
+  align-items: center;
+}
+
+.card .to_do_app h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #002765;
+}
+
+.card .to_do_app i {
+  font-size: 32px;
+  margin-left: 23px;
+  color: rgb(244, 169, 71);
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #edeef0;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin: 25px auto;
+}
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px;
+  background: transparent;
+  font-weight: 14px;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: #ff5945;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+ul li {
+  list-style: none;
+  font-size: 21px;
+  font-weight: bold;
+  padding: 12px 8px 12px 38px;
+  /* margin-left: 112px; */
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  color: #03122b;
+}
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(images/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 13px;
+  left: 0px;
+}
+.list_item {
+  text-decoration: line-through;
+  color: #555;
+}
+ul li.list_item::before {
+  background-image: url(images/checked.png);
+}
+ul li span {
+  position: absolute;
+  right: 23px;
+  top: 5px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  transition: all ease 0.4s;
+  /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+ul li span:hover {
+  background-color: #ff5945;
+  color: #fff;
+}
+h4{
+  display: inline;
+  position: absolute;
+  right: 12px;
+}
